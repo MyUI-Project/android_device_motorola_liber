@@ -1,1 +1,1 @@
-set_prop(vendor_hal_fingerprint_fpc, vendor_mot_fingerprint_prop)
+set_prop(hal_fingerprint_default, vendor_mot_fingerprint_prop)

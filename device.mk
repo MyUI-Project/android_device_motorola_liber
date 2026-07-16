@@ -16,6 +16,7 @@
 
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 $(call inherit-product, device/motorola/sm6150-common/common.mk)
@@ -24,7 +25,7 @@ $(call inherit-product, device/motorola/sm6150-common/common.mk)
 $(call inherit-product, vendor/motorola/liber/liber-vendor.mk)
 
 # Dolby
-$(call inherit-product, hardware/motorola/dolby/setup.mk)
+#$(call inherit-product, hardware/motorola/dolby/setup.mk)
 
 # Properties
 -include $(LOCAL_PATH)/properties.mk
@@ -46,7 +47,7 @@ PRODUCT_PACKAGES += \
 
 # audio.primary.sm6150 shim
 PRODUCT_PACKAGES += \
-    android.hardware.power-V1-ndk_platform.vendor
+#   android.hardware.power-V1-ndk_platform.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -56,8 +57,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
 # Camera
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++.so
+#PRODUCT_COPY_FILES += \
+#    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++.so
 
 # Power
 PRODUCT_COPY_FILES += \

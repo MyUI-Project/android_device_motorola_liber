@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2017-2026 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,8 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/liber/device.mk)
 
 # Inherit some common PixelBuilds stuff.
-$(call inherit-product, vendor/pb/config/common_full_phone.mk)
-WITH_GMS := true
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+#WITH_GMS := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_liber
@@ -43,7 +43,7 @@ TARGET_SCREEN_WIDTH := 1080
 # Build info
 BUILD_FINGERPRINT := "motorola/liber_retail/liber:11/RPIS31.Q2-42-25-1/19a8e:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=liber_retail \
+#    PRODUCT_NAME=liber_retail \
     PRIVATE_BUILD_DESC="liber_retail-user 11 RPIS31.Q2-42-25-1 19a8e release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola

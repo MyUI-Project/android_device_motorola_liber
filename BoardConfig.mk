@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2017-2026 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -29,12 +29,12 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 TARGET_KERNEL_CONFIG := vendor/liber_defconfig
 
 # Kernel modules - Audio
-TARGET_MODULE_ALIASES += \
-    snd-soc-aw882xx.ko:snd_smartpa_aw882xx.ko \
-    snd-soc-cs35l41.ko:cirrus_cs35l41.ko \
-    snd-soc-wm-adsp.ko:cirrus_wm_adsp.ko \
-    wcd_spi_dlkm.ko:audio_wcd_spi.ko \
-    wcd934x_dlkm.ko:audio_wcd934x.ko
+#TARGET_MODULE_ALIASES += \
+#    snd-soc-aw882xx.ko:snd_smartpa_aw882xx.ko \
+#    snd-soc-cs35l41.ko:cirrus_cs35l41.ko \
+#    snd-soc-wm-adsp.ko:cirrus_wm_adsp.ko \
+#    wcd_spi_dlkm.ko:audio_wcd_spi.ko \
+#    wcd934x_dlkm.ko:audio_wcd934x.ko
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
@@ -43,4 +43,4 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # inherit from the proprietary version
-include hardware/motorola/dolby/BoardConfigVendor.mk
+#include hardware/motorola/dolby/BoardConfigVendor.mk
