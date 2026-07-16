@@ -17,3 +17,29 @@ Rear Camera  | 64 MP (f/1.8, wide, PADF) + 8 MP (f/2.2, ultrawide) + 5MP (f/2.2,
 Front Camera | 16 MP (f/2.0)
 
 ![Device Picture](https://fdn2.gsmarena.com/vv/pics/motorola/motorola-one-fusion-plus-1.jpg)
+
+
+### Motorola One Fusion+ Device Tree
+
+Device Tree for Motorola One Fusion+ (liber)
+
+## Device
+
+Motorola One Fusion+
+
+## Codename
+
+liber
+
+## SoC
+
+Qualcomm Snapdragon 730 (SM6150)
+
+## Android
+
+Android 16
+Android 17 (WIP)
+
+## ROM
+
+MyUI
