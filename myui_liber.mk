@@ -47,3 +47,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="liber_retail-user 11 RPIS31.Q2-42-25-1 19a8e release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
+#FORCE_USE_ANDROIDMK_FOR_WPA_CONF := true

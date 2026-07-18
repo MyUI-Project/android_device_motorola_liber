@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2017-2026 The MyUI Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_liber.mk
+    $(LOCAL_DIR)/myui_liber.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_liber-eng \
-    aosp_liber-user \
-    aosp_liber-userdebug
+    myui_liber-eng \
+    myui_liber-user \
+    myui_liber-userdebug
